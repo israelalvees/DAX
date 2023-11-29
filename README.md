@@ -3,7 +3,7 @@
 ## Soma do Saldo Devedor por CPF
 
 ### Descrição
-Esta fórmula DAX calcula a soma do saldo devedor considerando apenas o primeiro registro de cada CPF na tabela BASE_HISTORICA.
+Esta fórmula DAX calcula a soma do saldo devedor considerando apenas o primeiro registro de cada CPF na tabela.
 
 #### Fórmula DAX
 
