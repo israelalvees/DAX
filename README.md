@@ -10,12 +10,12 @@ Esta fórmula DAX calcula a soma do saldo devedor considerando apenas o primeiro
 ```DAX
 SomaSaldoDevedor = 
 SUMX (
-    VALUES ( BASE_HISTORICA[BAS_CPF_CNPJ] ),
+    VALUES ( TABELA1[CPF] ),
     CALCULATE (
-        FIRSTNONBLANK ( BASE_HISTORICA[BAS_SALDO_DEVEDOR], 1 ),
+        FIRSTNONBLANK ( TABELA1[CPF], 1 ),
         FILTER (
-            BASE_HISTORICA,
-            BASE_HISTORICA[BAS_CPF_CNPJ] = EARLIER ( BASE_HISTORICA[BAS_CPF_CNPJ] )
+            TABELA1,
+            TABELA1[CPF] = EARLIER ( TABELA1[CPF] )
         )
     )
 )
