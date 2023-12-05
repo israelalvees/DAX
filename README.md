@@ -19,7 +19,7 @@ SUMX (
         )
     )
 )
-
+```
 ## Máximo de horas logado:
 
 ### Descrição
@@ -33,4 +33,4 @@ Esta fórmula calcula a máxima quantidade de horas logadas em um determinado m�
         MAXX(mes_atual, [.tempo_logado_hora]),
         FILTER(mes_atual, mes_atual[DATA])
     )
-
+```
