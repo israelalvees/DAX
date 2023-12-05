@@ -20,6 +20,18 @@ SUMX (
     )
 )
 ```
+
+## Converter Hora em Minuto:
+
+### Descrição
+Esta fórmula calcula o tempo falado em minutos com base na coluna [TEMPO_FALANDO]. Ela utiliza as funções HOUR e MINUTE para extrair a parte da hora e a parte dos minutos da coluna [TEMPO_FALANDO], respectivamente. Em seguida, multiplica a parte da hora por 60 e adiciona a parte dos minutos para obter o tempo total em minutos.
+
+### Fórmula
+
+```DAX
+.tempo_falado_minuto = HOUR([TEMPO_FALANDO]) * 60 + MINUTE([TEMPO_FALANDO])
+```
+
 ## Máximo de horas logado:
 
 ### Descrição
