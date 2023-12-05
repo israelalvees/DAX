@@ -1,0 +1,5 @@
+.max_logado_hora = 
+    CALCULATE(
+        MAXX(mes_atual, [.tempo_logado_hora]),
+        FILTER(mes_atual, mes_atual[DATA])
+    )
